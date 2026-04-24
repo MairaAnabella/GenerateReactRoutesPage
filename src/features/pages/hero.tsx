@@ -1,5 +1,6 @@
 "use client"
 
+import { Reveal } from "@/components/animations/Reveal"
 import { CodePreview } from "@/components/landing/codePreview"
 import { Button } from "@/components/ui/button"
 import { laravelExample } from "@/constants/codeExamplesHero"
@@ -15,6 +16,8 @@ export function Hero() {
             </div>
 
             <div className="container mx-auto px-4">
+                <Reveal>
+
                 <div className="mx-auto max-w-4xl text-center">
                     <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5 text-sm text-muted-foreground">
                         <span className="flex h-2 w-2 rounded-full bg-primary" />
@@ -57,9 +60,13 @@ export function Hero() {
                         </Button>
                     </div>
                 </div>
+                </Reveal>
 
                 {/* Code Preview */}
+                <Reveal>
+
                 <CodePreview example={laravelExample} />
+                </Reveal>
             </div>
         </section>
     )
