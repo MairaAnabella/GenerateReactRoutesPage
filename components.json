@@ -1,14 +1,14 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "radix-nova",
-  "rsc": false,
-  "tsx": true,
+  "rsc": [false,true],
+  "tsx": [true,false],
   "tailwind": {
-    "config": "",
-    "css": "src/App.css",
-    "baseColor": "neutral",
-    "cssVariables": true,
-    "prefix": ""
+   "config": ["tailwind.config.ts", "tailwind.config.js"],
+    "css": "styles/app.css",
+    "baseColor": ["neutral", "stone", "zinc", "mauve", "olive", "mist", "taupe"],
+    "cssVariables": [true,false],
+    "prefix": "tw-"  
   },
   "iconLibrary": "lucide",
   "rtl": false,
