@@ -1,6 +1,8 @@
+import { useIsMobile } from "@/hook/use-mobile"
 import { ArrowRight } from "lucide-react"
 
 export function CodeExample() {
+  const isMobile = useIsMobile();
   return (
     <section id="code-example" className="py-20 md:py-28">
       <div className="container mx-auto px-4">
@@ -14,13 +16,13 @@ export function CodeExample() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 md:items-center">
+        <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 md:items-stretch">
           {/* Before */}
-          <div className="relative">
+          <div className="relative h-full">
             <div className="absolute -left-3 -top-3 rounded-lg bg-red-500/20 px-3 py-1 text-sm font-medium text-red-400">
               Antes
             </div>
-            <div className="overflow-hidden rounded-xl border border-border bg-card">
+            <div className="overflow-hidden rounded-xl border border-border bg-card h-full flex flex-col">
               <div className="flex items-center gap-2 border-b border-border bg-secondary/50 px-4 py-3">
                 <div className="flex gap-1.5">
                   <div className="h-3 w-3 rounded-full bg-red-500/80" />
@@ -70,17 +72,21 @@ export function CodeExample() {
             </div>
           </div>
 
+
           {/* Arrow for mobile */}
-          <div className="flex justify-center md:hidden">
-            <ArrowRight className="h-8 w-8 rotate-90 text-primary" />
-          </div>
+          {isMobile && (
+            <div className="flex justify-center">
+              <ArrowRight className="h-8 w-8 rotate-90 text-primary" />
+            </div>
+          )}
+
 
           {/* After */}
-          <div className="relative">
+          <div className="relative h-full">
             <div className="absolute -left-3 -top-3 rounded-lg bg-green-500/20 px-3 py-1 text-sm font-medium text-green-400">
               Después
             </div>
-            <div className="overflow-hidden rounded-xl border border-primary/50 bg-card shadow-lg shadow-primary/5">
+            <div className="overflow-hidden rounded-xl border border-primary/50 bg-card shadow-lg shadow-primary/5 h-full flex flex-col">
               <div className="flex items-center gap-2 border-b border-border bg-secondary/50 px-4 py-3">
                 <div className="flex gap-1.5">
                   <div className="h-3 w-3 rounded-full bg-red-500/80" />

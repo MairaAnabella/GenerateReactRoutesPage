@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { MonitorDown, Braces, Menu, X } from "lucide-react"
-import { useIsMobile } from "@/hook/use-mobile" 
+import { useIsMobile } from "@/hook/use-mobile"
 import { Button } from "../ui/button"
 import { navLinks } from "@/constants/navLinks"
 import * as motion from "motion/react-client"
@@ -36,7 +36,7 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header  className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
 
       <div className="flex items-center justify-between px-6 h-14">
 
@@ -64,10 +64,17 @@ export function Navbar() {
                 </a>
               ))}
             </nav>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md">
-              <MonitorDown />
-              Instalar Extension
-            </Button>
+            <Button size="sm" className="gap-2 text-base" asChild>
+               <a
+                  href="https://marketplace.visualstudio.com/items?itemName=StarkTechSolutions.laravel-react-route-bridge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MonitorDown className="h-4 w-4" />
+                  Instalar Extension
+                </a>
+
+              </Button>
           </>
         )}
 
@@ -104,9 +111,16 @@ export function Navbar() {
               </motion.a>
             ))}
             <motion.div variants={itemVariants}>
-              <Button className="w-full gap-2 bg-primary text-primary-foreground">
-                <MonitorDown className="h-4 w-4" />
-                Instalar Extension
+              <Button size="lg" className="gap-2 text-base" asChild>
+                <a
+                  href="https://marketplace.visualstudio.com/items?itemName=StarkTechSolutions.laravel-react-route-bridge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MonitorDown className="h-4 w-4" />
+                  Instalar Extension
+                </a>
+
               </Button>
             </motion.div>
           </div>

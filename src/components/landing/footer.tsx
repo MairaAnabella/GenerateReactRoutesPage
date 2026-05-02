@@ -27,7 +27,7 @@ export function Footer() {
           {/* Links */}
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/MairaAnabella/GenerateReactRoutesLaravel"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
@@ -35,7 +35,7 @@ export function Footer() {
               <span>GitHub</span>
             </a>
             <a
-              href="https://marketplace.visualstudio.com"
+              href="https://marketplace.visualstudio.com/items?itemName=StarkTechSolutions.laravel-react-route-bridge"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
@@ -51,12 +51,12 @@ export function Footer() {
             Creado con{" "}
             <span className="text-primary">♥</span> por{" "}
             <a
-              href="https://github.com"
+              href="https://www.linkedin.com/in/mairaanabellagomez/?locale=es"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-foreground hover:text-primary"
             >
-              Tu Nombre
+              Maira Anabella Gomez
             </a>
           </p>
           <p className="mt-2">Licencia MIT</p>

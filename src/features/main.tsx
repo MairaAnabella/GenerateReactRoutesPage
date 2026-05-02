@@ -27,11 +27,9 @@ export function Main() {
           <HowItWorks />
         </Reveal>
 
-
         <Reveal>
           <CodeExample />
         </Reveal>
-
 
         <Reveal>
           <Benefits />

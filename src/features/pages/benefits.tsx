@@ -1,4 +1,4 @@
-import { Clock, ShieldCheck, Sparkles, Heart } from "lucide-react"
+import { Clock, ShieldCheck, Sparkles,/*  Heart */ } from "lucide-react"
 
 const benefits = [
   {
@@ -16,11 +16,11 @@ const benefits = [
     title: "Código más limpio",
     description: "Mantené tu codebase organizado y fácil de mantener.",
   },
-  {
+  /* {
     icon: Heart,
     title: "Mejor DX",
     description: "Disfrutá de autocompletado, navegación y documentación inline.",
-  },
+  }, */
 ]
 
 export function Benefits() {
@@ -36,7 +36,7 @@ export function Benefits() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
             <div
               key={index}

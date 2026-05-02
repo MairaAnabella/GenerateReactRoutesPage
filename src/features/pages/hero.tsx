@@ -9,7 +9,7 @@ import { ArrowRight, Download } from "lucide-react"
 
 export function Hero() {
     return (
-        <section className="relative overflow-hidden py-20 md:py-32">
+        <section className="relative overflow-hidden py-20 md:py-32" id="home">
             {/* Background gradient */}
             <div className="absolute inset-0 -z-10">
                 <div className="absolute top-1/4 left-1/2 -translate-x-1/2 h-[500px] w-[800px] rounded-full bg-primary/10 blur-3xl" />
@@ -50,7 +50,7 @@ export function Hero() {
                         </Button>
                         <Button size="lg" variant="outline" className="gap-2 text-base" asChild>
                             <a
-                                href="https://github.com"
+                                href="https://github.com/MairaAnabella/GenerateReactRoutesLaravel"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
